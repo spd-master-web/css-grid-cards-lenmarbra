@@ -102,11 +102,19 @@ aside {
   padding-top: 2em;
   padding-right: 2em;
 }
+
+@media (max-width: 320px) {
+  aside {
+    flex-basis: 10%;
+  }
+}
+
+
 .card-number {
   font-size: 2em;
   display: inline-block;
   margin-bottom: 0.2em;
-  padding-right: 0.25em; 
+  padding-right: 0.93em;
 }
 
 /* Symbol */
@@ -152,6 +160,9 @@ aside {
   }
   .card-symbol {
     order: -1;
+  }
+  aside {
+    flex-basis: 10%;
   }
 }
 
