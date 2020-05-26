@@ -35,10 +35,10 @@ h2, p {
 /* GRID */
 .grid-cards {
   padding: 1em;
-
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1em;
+  justify-content: center;
 }
 
 @media (max-width: 680px) {
@@ -90,15 +90,37 @@ h2, p {
 .card-graphic {
   flex-basis: 20%;
   flex-shrink: 0;
+  text-align: center;
+  padding: 2em;
+  padding-left: 0;
+
 }
+
 
 .card-number {
   font-size: 2em;
 }
 
+/* Symbol */
 .card-symbol {
-
+  display: flex;
+  flex-flow: column-reverse nowrap;
 }
+
+.line{
+  width: 100px;
+  height: 8px;
+  margin: 5px 0;
+ }
+  
+ .full{
+  background-color: black;
+ }
+  
+ .empty {
+  background: linear-gradient(to right, black 40%, #FFFFFF00 40%, #FFFFFF00 60%, black 60%);
+ }
+ 
 
 @media (max-width: 320px) {
   .card-graphic {
