@@ -114,14 +114,14 @@ aside {
   font-size: 2em;
   display: inline-block;
   margin-bottom: 0.2em;
-  padding-right: 0.93em;
+  padding-right: 0.42em;
 }
 
 /* Symbol */
 
 .card-symbol {
   /* margin: 0.6em auto; */
-  width: 40px;
+  width: 70px;
   height: auto;
   display: grid; 
   grid-template-columns: 1fr 1fr;
@@ -165,4 +165,3 @@ aside {
     flex-basis: 10%;
   }
 }
-
