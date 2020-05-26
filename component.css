@@ -69,7 +69,7 @@ h2, p {
 /* card content */
 
 header{
-  width: 80%;
+  width: 75%;
 }
 .card-content {
   margin-right: 1rem;
@@ -80,10 +80,12 @@ header{
 .card-title {
   font-size: 2em;
   font-weight: normal;
+  margin-bottom: 0.3em;
 }
 
 .card-subtitle {
   text-transform: uppercase;
+  margin-bottom: 0.4em;
 }
 
 .card-description {
@@ -92,18 +94,19 @@ header{
 }
 
 /* card graphic */
-.aside {
+aside {
   flex-basis: 20%;
   flex-shrink: 0;
   text-align: center;
-  padding: 2em;
-  padding-left: 0;
   display: inline-block;
-  margin-top: 20em;
+  padding-top: 2em;
+  padding-right: 2em;
 }
 .card-number {
   font-size: 2em;
   display: inline-block;
+  margin-bottom: 0.2em;
+  padding-right: 0.25em; 
 }
 
 /* Symbol */
