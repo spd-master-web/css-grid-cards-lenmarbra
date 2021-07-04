@@ -34,28 +34,25 @@ h2, p {
 
 /* GRID */
 .grid-cards {
-  padding: 1em;
-
+  padding: 5em;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1em;
+  justify-content: center;
 }
 
 @media (max-width: 680px) {
   .grid-cards {
     padding: .5em;
-
     grid-template-columns: 1fr;
   }
 }
 
 /* CARD */
 .card {
-  padding: 2em;
-
+  /* padding: 2em; */
   display: flex;
-
-
+  flex-wrap: wrap;
   background-color: var(--background-color);
   border: .1rem solid var(--border-color);
   border-radius: 2rem;
@@ -65,40 +62,98 @@ h2, p {
     /* 0.8 * 20px = 16px */
     /* font-size: 80%; */
     flex-wrap: wrap;
+    max-width: 6em;
   }
 }
 
 /* card content */
+
+header{
+  width: 75%;
+}
 .card-content {
   margin-right: 1rem;
+  /* width: 20em; */
+  padding: 2em;
 }
 
 .card-title {
   font-size: 2em;
   font-weight: normal;
+  margin-bottom: 0.3em;
 }
 
 .card-subtitle {
   text-transform: uppercase;
+  margin-bottom: 0.4em;
 }
 
 .card-description {
-
+  margin-bottom: 1em;
+  font-size: .9em;
 }
 
 /* card graphic */
-.card-graphic {
+aside {
   flex-basis: 20%;
   flex-shrink: 0;
+  text-align: center;
+  display: inline-block;
+  padding-top: 2em;
+  padding-right: 2em;
 }
+
+@media (max-width: 320px) {
+  aside {
+    flex-basis: 10%;
+  }
+}
+
 
 .card-number {
   font-size: 2em;
+  display: inline-block;
+  margin-bottom: 0.2em;
+  padding-right: 0.42em;
 }
+
+/* Symbol */
 
 .card-symbol {
+  padding: 0;
+  margin: 0;
+  width: 50px;
+ }
 
+ .card-symbol .full-width {
+  margin: 3px;
+  height: 3px;
+  background-color: rgb(12, 11, 11);
+ }
+
+.card-symbol div {
+  background-color: #fff;
+  height: 4px;  
+  margin: 3px;
+  height: 3px;
+  background: linear-gradient(90deg, #000000 0%, #000000 40%, #ecebeb33 40%, #f8e8e833 60%, #000 60%, #000 100%);
+ }
+ 
+
+
+ 
+
+
+.card-img {
+  width: 100%;
+  height: auto;
+  /* display: block; */
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  position: relative;
+  bottom: 0;
 }
+ 
 
 @media (max-width: 320px) {
   .card-graphic {
@@ -112,5 +167,7 @@ h2, p {
   .card-symbol {
     order: -1;
   }
+  aside {
+    flex-basis: 10%;
+  }
 }
-
